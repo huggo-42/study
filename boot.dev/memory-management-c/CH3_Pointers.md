@@ -5,7 +5,7 @@ Before we talk about pointers, we should talk about variables and memory in gene
 
 A variable is a human readable name that refers to an address in memory, which is an index into the big array of bytes. Here’s a diagram:
 
-![[CH3_Pointers_L1_Memory_1.png]]
+![](CH3_Pointers_L1_Memory_1.png)
 
 Getting a Variable’s Address
 
@@ -36,7 +36,7 @@ That’s because 0xfff8 is just a number. But:
 - It’s written in hexadecimal (base 16) instead of decimal (base 10).
 - It’s a pretty big number, so it’s not very human readable. 0xfff8 is the same as 65,528 in decimal.
 
-![[CH3_Pointers_L2_WhatIsAnAddress_1.png]]
+![](CH3_Pointers_L2_WhatIsAnAddress_1.png)
 
 # CH3: Pointers | L3: Virtual Memory
 As it turns out, your code probably doesn’t have direct access to the physical RAM in your computer.
@@ -49,7 +49,7 @@ Instead, your operating system provides a layer of abstraction called virtual me
 
 There are exceptions to this, for example if you’re using C to build embedded firmware that runs without an operating system, your code might interact directly with physical memory.
 
-![[CH3_Pointers_L3_VirtualMemory_1.png]]
+![](CH3_Pointers_L3_VirtualMemory_1.png)
 
 By only giving processes access to a chunk of virtual memory, the operating system can do some cool things:
 - Isolation: One process can’t access the memory of another process.
