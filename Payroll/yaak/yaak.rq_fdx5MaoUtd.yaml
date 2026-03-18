@@ -1,0 +1,18 @@
+type: http_request
+model: http_request
+id: rq_fdx5MaoUtd
+createdAt: 2026-03-18T00:08:25.371925706
+updatedAt: 2026-03-18T00:09:15.038773608
+workspaceId: wk_8mNxxMKmsg
+folderId: fl_zk9pUsrr8i
+authentication: {}
+authenticationType: null
+body: {}
+bodyType: null
+description: ''
+headers: []
+method: GET
+name: all
+sortPriority: -1773792505371.0
+url: ${[ base_url ]}/products
+urlParameters: []

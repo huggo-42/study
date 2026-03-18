@@ -1,0 +1,27 @@
+type: http_request
+model: http_request
+id: rq_KMqrDLMTKc
+createdAt: 2026-03-18T00:09:49.537359546
+updatedAt: 2026-03-18T00:10:46.025721734
+workspaceId: wk_8mNxxMKmsg
+folderId: fl_zk9pUsrr8i
+authentication: {}
+authenticationType: null
+body:
+  text: |-
+    {
+      "name": "new product from yaak",
+      "price": 42.69
+    }
+bodyType: application/json
+description: ''
+headers:
+- enabled: true
+  name: Content-Type
+  value: application/json
+  id: haj3FfGtUF
+method: POST
+name: new
+sortPriority: -1773792505370.998
+url: ${[ base_url ]}/products
+urlParameters: []

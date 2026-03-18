@@ -57,10 +57,10 @@ class ProductController {
 	@PutMapping("/products/{id}")
 	ResponseEntity<?> replaceProducts(@RequestBody Product newProduct, @PathVariable Long id) {
 		Product updatedProduct = repository.findById(id)
-				.map(Product -> {
-					newProduct.setName(newProduct.getName());
-					newProduct.setPrice(newProduct.getPrice());
-					return repository.save(Product);
+				.map(product -> {
+					product.setName(newProduct.getName());
+					product.setPrice(newProduct.getPrice());
+					return repository.save(product);
 				})
 				.orElseGet(() -> repository.save(newProduct));
 		EntityModel<Product> entityModel = assembler.toModel(updatedProduct);

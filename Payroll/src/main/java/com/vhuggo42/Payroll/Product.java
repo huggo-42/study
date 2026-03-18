@@ -9,31 +9,31 @@ import jakarta.persistence.Table;
 @Entity
 @Table(name = "product")
 class Product {
-	@Id
-	@GeneratedValue(strategy = GenerationType.IDENTITY)
-	private Long id;
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private Long id;
 
-	private String name;
+    private String name;
 
-	private Double price;
+    private Double price;
 
-	public Long getId() {
-		return id;
-	}
+    public Long getId() {
+        return id;
+    }
 
-	public String getName() {
-		return name;
-	}
+    public String getName() {
+        return name;
+    }
 
-	public Double getPrice() {
-		return price;
-	}
+    public Double getPrice() {
+        return price;
+    }
 
-	public void setName(String name) {
-		this.name = name;
-	}
+    public void setName(String name) {
+        this.name = name;
+    }
 
-	public void setPrice(Double price) {
-		this.price = price;
-	}
+    public void setPrice(Double price) {
+        this.price = price;
+    }
 }

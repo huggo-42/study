@@ -1,0 +1,27 @@
+type: http_request
+model: http_request
+id: rq_xB5j7ZqcFY
+createdAt: 2026-03-18T00:11:22.055767284
+updatedAt: 2026-03-18T00:14:41.351758987
+workspaceId: wk_8mNxxMKmsg
+folderId: fl_zk9pUsrr8i
+authentication: {}
+authenticationType: null
+body:
+  text: |-
+    {
+      "name": "replaced name",
+      "price": 9.26
+    }
+bodyType: application/json
+description: ''
+headers:
+- enabled: true
+  name: Content-Type
+  value: application/json
+  id: haj3FfGtUF
+method: PUT
+name: replace
+sortPriority: -1773792505370.997
+url: ${[ base_url ]}/products/2
+urlParameters: []
