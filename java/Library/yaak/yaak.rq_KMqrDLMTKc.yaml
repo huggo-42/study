@@ -1,0 +1,27 @@
+type: http_request
+model: http_request
+id: rq_KMqrDLMTKc
+createdAt: 2026-03-18T00:09:49.537359546
+updatedAt: 2026-03-21T02:07:37.345555913
+workspaceId: wk_8mNxxMKmsg
+folderId: fl_zk9pUsrr8i
+authentication: {}
+authenticationType: null
+body:
+  text: |-
+    {
+      "authorName": "Douglas Adams",
+      "title": "The Hitchhiker's Guide to the Galaxy"
+    }
+bodyType: application/json
+description: ''
+headers:
+- enabled: true
+  name: Content-Type
+  value: application/json
+  id: haj3FfGtUF
+method: POST
+name: new
+sortPriority: -1773792505370.998
+url: ${[ base_url ]}/books
+urlParameters: []

@@ -1,0 +1,23 @@
+type: http_request
+model: http_request
+id: rq_7j4zE66iNJ
+createdAt: 2026-03-18T01:54:41.437796
+updatedAt: 2026-03-21T01:52:09.420757104
+workspaceId: wk_8mNxxMKmsg
+folderId: fl_zk9pUsrr8i
+authentication: {}
+authenticationType: null
+body:
+  text: |-
+    {
+      "name": "replaced name",
+      "price": 9.26
+    }
+bodyType: null
+description: ''
+headers: []
+method: DELETE
+name: delete
+sortPriority: -1773792505370.996
+url: ${[ base_url ]}/books/1
+urlParameters: []

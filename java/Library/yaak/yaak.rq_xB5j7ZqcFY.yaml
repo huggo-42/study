@@ -1,0 +1,27 @@
+type: http_request
+model: http_request
+id: rq_xB5j7ZqcFY
+createdAt: 2026-03-18T00:11:22.055767284
+updatedAt: 2026-03-21T02:07:53.038850368
+workspaceId: wk_8mNxxMKmsg
+folderId: fl_zk9pUsrr8i
+authentication: {}
+authenticationType: null
+body:
+  text: |-
+    {
+      "authorName": "name of the author",
+      "title": "title of a cool book"
+    }
+bodyType: application/json
+description: ''
+headers:
+- enabled: true
+  name: Content-Type
+  value: application/json
+  id: haj3FfGtUF
+method: PUT
+name: replace
+sortPriority: -1773792505370.997
+url: ${[ base_url ]}/books/2
+urlParameters: []
