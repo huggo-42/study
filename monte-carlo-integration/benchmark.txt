@@ -1,0 +1,35 @@
+[Benchmarking with 50 throws]
+5000 times    -> Mean = 0.785980 | Proximicity = -0.000582
+10000 times   -> Mean = 0.786696 | Proximicity = -0.001298
+100000 times  -> Mean = 0.785468 | Proximicity = -0.000070
+1000000 times -> Mean = 0.785410 | Proximicity = -0.000012
+
+[Benchmarking with 100 throws]
+5000 times    -> Mean = 0.785728 | Proximicity = -0.000330
+10000 times   -> Mean = 0.784965 | Proximicity =  0.000433
+100000 times  -> Mean = 0.785184 | Proximicity =  0.000214
+1000000 times -> Mean = 0.785404 | Proximicity = -0.000006
+
+[Benchmarking with 500 throws]
+5000 times    -> Mean = 0.785220 | Proximicity =  0.000179
+10000 times   -> Mean = 0.785132 | Proximicity =  0.000266
+100000 times  -> Mean = 0.785389 | Proximicity =  0.000010
+1000000 times -> Mean = 0.785425 | Proximicity = -0.000027
+
+[Benchmarking with 1000 throws]
+5000 times    -> Mean = 0.785455 | Proximicity = -0.000057
+10000 times   -> Mean = 0.785318 | Proximicity =  0.000080
+100000 times  -> Mean = 0.785458 | Proximicity = -0.000059
+1000000 times -> Mean = 0.785417 | Proximicity = -0.000018
+
+[Benchmarking with 10000 throws]
+5000 times    -> Mean = 0.785327 | Proximicity =  0.000071
+10000 times   -> Mean = 0.785375 | Proximicity =  0.000024
+100000 times  -> Mean = 0.785425 | Proximicity = -0.000027
+1000000 times -> Mean = 0.785400 | Proximicity = -0.000002
+
+[Benchmarking with 100000 throws]
+5000 times    -> Mean = 0.785407 | Proximicity = -0.000009
+10000 times   -> Mean = 0.785399 | Proximicity = -0.000001
+100000 times  -> Mean = 0.785402 | Proximicity = -0.000004
+1000000 times -> Mean = 0.785398 | Proximicity = -0.000000
