@@ -1,0 +1,20 @@
+{
+  "name": "hello-effect",
+  "module": "index.ts",
+  "type": "module",
+  "private": true,
+  "devDependencies": {
+    "@effect/language-service": "^0.85.1",
+    "@types/bun": "latest"
+  },
+  "peerDependencies": {
+    "typescript": "^5"
+  },
+  "dependencies": {
+    "@effect/ai": "^0.35.0",
+    "@effect/ai-anthropic": "^0.25.0",
+    "@effect/cli": "^0.75.0",
+    "@effect/platform-node": "^0.106.0",
+    "effect": "^3.21.0"
+  }
+}
