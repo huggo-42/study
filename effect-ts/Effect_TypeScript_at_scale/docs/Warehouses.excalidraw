@@ -1,0 +1,52 @@
+{
+  "type": "excalidraw",
+  "version": 2,
+  "source": "https://excalidraw.com",
+  "elements": [
+    {
+      "id": "7Nd4Nmx7x8PTPtd1PK9gx",
+      "type": "text",
+      "x": 774.680769243454,
+      "y": 168.65961537827297,
+      "width": 523,
+      "height": 650,
+      "angle": 0,
+      "strokeColor": "#1e1e1e",
+      "backgroundColor": "transparent",
+      "fillStyle": "solid",
+      "strokeWidth": 2,
+      "strokeStyle": "solid",
+      "roughness": 1,
+      "opacity": 100,
+      "groupIds": [],
+      "frameId": null,
+      "index": "a0",
+      "roundness": null,
+      "seed": 702338833,
+      "version": 983,
+      "versionNonce": 1771515679,
+      "isDeleted": false,
+      "boundElements": null,
+      "updated": 1776406819355,
+      "link": null,
+      "locked": false,
+      "text": "Domain requirements:\n- Authentication as User\n    - login by email & password\n- Association Member (Person)\n    - can be impersonate by user \n        (parent may impersonate child)\n- Product catalog (any good moved in the WH)\n    - unique product code SKU\n    - product name\n    - attach 1 image describing the product\n    - unit of measure (PCS, KGM, etc...)\n- Define product serial numbers\n    - when moving products managed by serial,\n        we need to provide serial as well\n- Define warehouses\n    - (1) actual location (main address of association)\n    - (2) temporary rent warehouses\n    - (3) at home of any member of the association\n- Register movements of goods between warehouses\n    - each member of the association can move items\n        (only on owned warehouses)\n    - super-members can move between any WHs\n- Keep stocks\n    - just by amount\n    - by amount per serial no\n    - stocks by warehouse",
+      "fontSize": 20,
+      "fontFamily": 5,
+      "textAlign": "left",
+      "verticalAlign": "top",
+      "containerId": null,
+      "originalText": "Domain requirements:\n- Authentication as User\n    - login by email & password\n- Association Member (Person)\n    - can be impersonate by user \n        (parent may impersonate child)\n- Product catalog (any good moved in the WH)\n    - unique product code SKU\n    - product name\n    - attach 1 image describing the product\n    - unit of measure (PCS, KGM, etc...)\n- Define product serial numbers\n    - when moving products managed by serial,\n        we need to provide serial as well\n- Define warehouses\n    - (1) actual location (main address of association)\n    - (2) temporary rent warehouses\n    - (3) at home of any member of the association\n- Register movements of goods between warehouses\n    - each member of the association can move items\n        (only on owned warehouses)\n    - super-members can move between any WHs\n- Keep stocks\n    - just by amount\n    - by amount per serial no\n    - stocks by warehouse",
+      "autoResize": true,
+      "lineHeight": 1.25
+    }
+  ],
+  "appState": {
+    "gridSize": 20,
+    "gridStep": 5,
+    "gridModeEnabled": false,
+    "viewBackgroundColor": "#ffffff",
+    "lockedMultiSelections": {}
+  },
+  "files": {}
+}
