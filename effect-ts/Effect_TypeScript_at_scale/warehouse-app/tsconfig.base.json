@@ -12,7 +12,11 @@
     "emitDecoratorMetadata": true,
     "experimentalDecorators": true,
     "moduleResolution": "NodeNext",
-    "lib": ["ES2022", "DOM", "DOM.Iterable"],
+    "lib": [
+      "ES2022",
+      "DOM",
+      "DOM.Iterable"
+    ],
     "types": [],
     "isolatedModules": true,
     "sourceMap": true,
@@ -35,17 +39,39 @@
     "module": "NodeNext",
     "incremental": true,
     "removeComments": false,
-    "plugins": [{ "name": "@effect/language-service" }],
+    "plugins": [
+      {
+        "name": "@effect/language-service"
+      }
+    ],
     "paths": {
-      "@warehouse-app/cli": ["./packages/cli/src/index.js"],
-      "@warehouse-app/cli/*": ["./packages/cli/src/*.js"],
-      "@warehouse-app/cli/test/*": ["./packages/cli/test/*.js"],
-      "@warehouse-app/domain": ["./packages/domain/src/index.js"],
-      "@warehouse-app/domain/*": ["./packages/domain/src/*.js"],
-      "@warehouse-app/domain/test/*": ["./packages/domain/test/*.js"],
-      "@warehouse-app/server": ["./packages/server/src/index.js"],
-      "@warehouse-app/server/*": ["./packages/server/src/*.js"],
-      "@warehouse-app/server/test/*": ["./packages/server/test/*.js"]
+      "@rsp-app/cli": [
+        "./packages/cli/src/index.js"
+      ],
+      "@rsp-app/cli/*": [
+        "./packages/cli/src/*.js"
+      ],
+      "@rsp-app/cli/test/*": [
+        "./packages/cli/test/*.js"
+      ],
+      "@rsp-app/domain": [
+        "./packages/domain/src/index.js"
+      ],
+      "@rsp-app/domain/*": [
+        "./packages/domain/src/*.js"
+      ],
+      "@rsp-app/domain/test/*": [
+        "./packages/domain/test/*.js"
+      ],
+      "@rsp-app/server": [
+        "./packages/server/src/index.js"
+      ],
+      "@rsp-app/server/*": [
+        "./packages/server/src/*.js"
+      ],
+      "@rsp-app/server/test/*": [
+        "./packages/server/test/*.js"
+      ]
     }
   }
 }

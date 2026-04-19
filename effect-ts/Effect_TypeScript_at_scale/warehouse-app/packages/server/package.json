@@ -1,5 +1,5 @@
 {
-  "name": "@warehouse-app/server",
+  "name": "@rsp-app/server",
   "version": "0.0.0",
   "type": "module",
   "license": "MIT",
@@ -8,10 +8,6 @@
     "type": "git",
     "url": "<PLACEHOLDER>",
     "directory": "packages/server"
-  },
-  "publishConfig": {
-    "access": "public",
-    "directory": "dist"
   },
   "scripts": {
     "codegen": "build-utils prepare-v2",
@@ -26,7 +22,7 @@
   "dependencies": {
     "@effect/platform": "latest",
     "@effect/platform-node": "latest",
-    "@warehouse-app/domain": "workspace:^",
+    "@rsp-app/domain": "workspace:^",
     "effect": "latest"
   },
   "effect": {

@@ -1,8 +1,10 @@
 import { describe, expect, it } from "@effect/vitest"
-import * as Schema from "@effect/schema/Schema";
-import * as AggregateRoot from "../src/AggregateRoot.js";
-import * as AggregateMessage from "../src/AggregateMessage.js";
-import * as Option from "effect/Option";
+import * as Option from "effect/Option"
+import * as Schema from "effect/Schema"
+import * as AggregateRoot from "../src/AggregateRoot.js"
+import * as Message from "../src/Message.js"
+import * as MessageHeaders from "../src/MessageHeaders.js"
+import * as MessageKind from "../src/MessageKind.js"
 
 const ProductAggregate = AggregateRoot.AggregateRoot({
 	aggregateRootName: "products"
@@ -39,28 +41,29 @@ export class ProductNameChanged extends Schema.TaggedClass<ProductNameChanged>()
 ) {
 }
 
-describe("Dummy", () => {
+describe("Message", () => {
 	it("Query - it should check the type of a message", () => {
-		const messageKind = AggregateMessage.getAggregateMessageKind(ReadProductName)
+		const messageKind = MessageKind.getMessageKind(ReadProductName)
 		expect(Option.isSome(messageKind)).toBe(true)
 		expect(messageKind).toEqual(Option.some("Query"))
 	})
 	it("Command - it should check the type of a message", () => {
-		const messageKind = AggregateMessage.getAggregateMessageKind(ChangeProductName)
+		const messageKind = MessageKind.getMessageKind(ChangeProductName)
 		expect(Option.isSome(messageKind)).toBe(true)
 		expect(messageKind).toEqual(Option.some("Command"))
 	})
 	it("Event - it should check the type of a message", () => {
-		const messageKind = AggregateMessage.getAggregateMessageKind(ProductNameChanged)
+		const messageKind = MessageKind.getMessageKind(ProductNameChanged)
 		expect(Option.isSome(messageKind)).toBe(true)
 		expect(messageKind).toEqual(Option.some("Event"))
 	})
-	it("Command - by default the aggregate root should be filled", () => {
+	it("Command - by default, the aggregate root should be filled", () => {
+		const _headers = MessageHeaders.MessageHeaders.make({ messageId: "aaaa" })
 		const message = ChangeProductName.make({
 			newName: "New product",
-			_id: "message-id",
-			_aggregateId: "product-abc",
+			_aggregateId: "product-1",
+			_headers
 		})
-		expect(message._aggregateRoot).toEqual(ProductAggregate.aggregateRootName)
+		expect(Message.getAggregateRootName(message)).toEqual(ProductAggregate.aggregateRootName)
 	})
 })

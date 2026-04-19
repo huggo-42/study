@@ -1,5 +1,5 @@
 {
-  "name": "@warehouse-app/domain",
+  "name": "@rsp-app/domain",
   "version": "0.0.0",
   "type": "module",
   "license": "MIT",
@@ -25,7 +25,9 @@
   },
   "dependencies": {
     "@effect/platform": "latest",
+    "@effect/schema": "latest",
     "@effect/sql": "latest",
+    "@effect/sql-sqlite-node": "latest",
     "effect": "latest"
   },
   "effect": {

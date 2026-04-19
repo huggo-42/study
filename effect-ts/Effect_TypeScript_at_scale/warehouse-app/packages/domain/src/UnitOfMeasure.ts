@@ -1,4 +1,4 @@
-import * as Schema from "@effect/schema/Schema"
+import * as Schema from "effect/Schema"
 
 export const UnitOfMeasureIdTypeId = Symbol.for("@@UnitOfMeasure")
 
@@ -8,8 +8,10 @@ export const UnitOfMeasureId = Schema.UUID.pipe(
 )
 
 export const UnitOfMeasure = Schema.Struct({
-	UnitOfMeasureId: UnitOfMeasureId,
+	unitOfMeasureId: UnitOfMeasureId,
 	name: Schema.NonEmptyString
 }).pipe(
-	Schema.annotations({ identifier: "UnitOfMeasure" })
+	Schema.annotations({
+		identifier: "UnitOfMeasure"
+	})
 )

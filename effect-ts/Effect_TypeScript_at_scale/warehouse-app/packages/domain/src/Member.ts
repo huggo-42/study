@@ -1,8 +1,8 @@
-import * as Schema from "@effect/schema/Schema"
+import * as Schema from "effect/Schema"
 
 export const MemberIdTypeId = Symbol.for("@@MemberId")
 export const MemberId = Schema.UUID.pipe(
-	Schema.annotations({ identifier: "MemberId" }),
+	Schema.annotations({ identifier: "MemberId" })
 )
 
 export const Member = Schema.Struct({

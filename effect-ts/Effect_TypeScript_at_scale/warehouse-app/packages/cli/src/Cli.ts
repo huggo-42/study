@@ -1,12 +1,11 @@
 import { Args, Command, Options } from "@effect/cli"
-import { TodoId } from "@warehouse-app/domain/TodosApi"
 import { TodosClient } from "./TodosClient.js"
 
 const todoArg = Args.text({ name: "todo" }).pipe(
   Args.withDescription("The message associated with a todo")
 )
 
-const todoId = Options.withSchema(Options.integer("id"), TodoId).pipe(
+const todoId = Options.integer("id").pipe(
   Options.withDescription("The identifier of the todo")
 )
 
